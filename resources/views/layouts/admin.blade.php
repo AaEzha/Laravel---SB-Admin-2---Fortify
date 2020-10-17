@@ -71,6 +71,14 @@
             </a>
         </li>
 
+        <!-- Nav Item - About -->
+        <li class="nav-item {{ Nav::isRoute('blank') }}">
+            <a class="nav-link" href="{{ route('blank') }}">
+                <i class="fas fa-fw fa-book"></i>
+                <span>{{ __('Blank Page') }}</span>
+            </a>
+        </li>
+
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block">
 
@@ -273,7 +281,7 @@
 
             <!-- Begin Page Content -->
             <div class="container-fluid">
-
+                @stack('notif')
                 @yield('main-content')
 
             </div>
