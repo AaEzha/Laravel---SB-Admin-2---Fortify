@@ -1,13 +1,10 @@
-# Laravel SB Admin 2
+# Laravel 8 + SB Admin 2
 
-SB Admin 2 for Laravel.
+SB Admin 2 for Laravel 8.
 
 | Laravel Version | Branch |
 |-----------------|--------|
-| 8.0             | master |
-| 7.0             | v7.0   |
-| 6.0             | v6.0   |
-| 5.8             | v5.8   |
+| 8.0             | main   |
 
 ## Requirements
 
