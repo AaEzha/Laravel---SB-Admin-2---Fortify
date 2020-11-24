@@ -7,7 +7,7 @@
     <!-- Main Content goes here -->
 
 
-    <!-- End of Main Content
+    <!-- End of Main Content -->
 @endsection
 
 @push('notif')
