@@ -21,6 +21,8 @@
 
     <!-- Favicon -->
     <link href="{{ asset('img/favicon.png') }}" rel="icon" type="image/png">
+
+    @stack('css')
 </head>
 <body id="page-top">
 
@@ -71,7 +73,15 @@
             </a>
         </li>
 
-        <!-- Nav Item - About -->
+        <!-- Nav Item -->
+        <li class="nav-item {{ Nav::isRoute('grocery') }}">
+            <a class="nav-link" href="{{ route('grocery') }}">
+                <i class="fas fa-fw fa-book"></i>
+                <span>{{ __('Grocery CRUD') }}</span>
+            </a>
+        </li>
+
+        <!-- Nav Item -->
         <li class="nav-item {{ Nav::isRoute('blank') }}">
             <a class="nav-link" href="{{ route('blank') }}">
                 <i class="fas fa-fw fa-book"></i>
@@ -337,5 +347,6 @@
 <script src="{{ asset('vendor/bootstrap/js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('vendor/jquery-easing/jquery.easing.min.js') }}"></script>
 <script src="{{ asset('js/sb-admin-2.min.js') }}"></script>
+@stack('js')
 </body>
 </html>
