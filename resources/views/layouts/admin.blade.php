@@ -74,14 +74,6 @@
         </li>
 
         <!-- Nav Item -->
-        <li class="nav-item {{ Nav::isRoute('grocery') }}">
-            <a class="nav-link" href="{{ route('grocery') }}">
-                <i class="fas fa-fw fa-book"></i>
-                <span>{{ __('Grocery CRUD') }}</span>
-            </a>
-        </li>
-
-        <!-- Nav Item -->
         <li class="nav-item {{ Nav::isRoute('blank') }}">
             <a class="nav-link" href="{{ route('blank') }}">
                 <i class="fas fa-fw fa-book"></i>
