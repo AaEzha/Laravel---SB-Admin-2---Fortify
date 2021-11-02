@@ -29,7 +29,9 @@
                     <td scope="row">{{ $loop->iteration }}</td>
                     <td>{{ $user->full_name }}</td>
                     <td>{{ $user->email }}</td>
-                    <td></td>
+                    <td>
+                        <a href="{{ route('basic.edit', $user->id) }}" class="btn btn-sm btn-primary">Edit</a>
+                    </td>
                 </tr>
             @endforeach
         </tbody>

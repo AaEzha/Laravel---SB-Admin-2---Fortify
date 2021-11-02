@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\AddUserRequest;
+use App\Http\Requests\EditUserRequest;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -70,9 +71,12 @@ class BasicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(User $basic)
     {
-        //
+        return view('basic.edit', [
+            'title' => 'Edit User',
+            'user' => $basic
+        ]);
     }
 
     /**
@@ -82,9 +86,17 @@ class BasicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(EditUserRequest $request, User $basic)
     {
-        //
+        if($request->filled('password')) {
+            $basic->password = Hash::make($request->password);
+        }
+        $basic->name = $request->name;
+        $basic->last_name = $request->last_name;
+        $basic->email = $request->email;
+        $basic->save();
+
+        return redirect()->route('basic.index')->with('message', 'User updated successfully!');
     }
 
     /**
