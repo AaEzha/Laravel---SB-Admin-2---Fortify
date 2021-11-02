@@ -29,3 +29,7 @@ Route::get('/about', function () {
 Route::get('/blank', function () {
     return view('blank');
 })->name('blank');
+
+Route::middleware('auth')->group(function() {
+    Route::resource('basic', BasicController::class);
+});
