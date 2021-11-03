@@ -24,7 +24,6 @@ class EditUserRequest extends FormRequest
     public function rules()
     {
         return [
-            'id' => 'required',
             'name' => 'required',
             'last_name' => 'required',
             'email' => 'required|email',
