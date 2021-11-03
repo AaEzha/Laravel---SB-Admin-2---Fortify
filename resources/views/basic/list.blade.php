@@ -30,7 +30,14 @@
                     <td>{{ $user->full_name }}</td>
                     <td>{{ $user->email }}</td>
                     <td>
-                        <a href="{{ route('basic.edit', $user->id) }}" class="btn btn-sm btn-primary">Edit</a>
+                        <div class="d-flex">
+                            <a href="{{ route('basic.edit', $user->id) }}" class="btn btn-sm btn-primary mr-2">Edit</a>
+                            <form action="{{ route('basic.destroy', $user->id) }}" method="post">
+                                @csrf
+                                @method('delete')
+                                <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure to delete this?')">Delete</button>
+                            </form>
+                        </div>
                     </td>
                 </tr>
             @endforeach

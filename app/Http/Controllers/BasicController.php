@@ -105,8 +105,10 @@ class BasicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(User $basic)
     {
-        //
+        $basic->delete();
+
+        return redirect()->route('basic.index')->with('message', 'User deleted successfully!');
     }
 }
