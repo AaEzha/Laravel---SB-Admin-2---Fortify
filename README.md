@@ -1,14 +1,15 @@
-# Laravel 8 + SB Admin 2
+# Laravel 9 + SB Admin 2
 
-SB Admin 2 for Laravel 8.
+SB Admin 2 for Laravel 9.
 
 | Laravel Version | Branch |
 |-----------------|--------|
-| 8.0             | main   |
+| 9.0             | main   |
+| 8.0             | 8.x    |
 
 ## Requirements
 
-- PHP >= 7.3.0
+- PHP >= 8.0.2
 - BCMath PHP Extension
 - Ctype PHP Extension
 - JSON PHP Extension
