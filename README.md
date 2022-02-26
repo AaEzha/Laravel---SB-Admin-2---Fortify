@@ -29,6 +29,10 @@ SB Admin 2 for Laravel 9.
 - Run migration `php artisan migrate`
 - Make something awesome!
 
+## Laravel 8 Note
+
+Choose branch 8.x to use Laravel 8.
+
 ## Note
 
 Recommend to install this preset on a project that you are starting from scratch, otherwise your project's design might break.
