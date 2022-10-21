@@ -6,6 +6,7 @@ use App\Http\Requests\AddUserRequest;
 use App\Http\Requests\EditUserRequest;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
 class BasicController extends Controller
@@ -107,6 +108,10 @@ class BasicController extends Controller
      */
     public function destroy(User $basic)
     {
+        if (Auth::id() == $basic->getKey()) {
+            return redirect()->route('basic.index')->with('warning', 'Can not delete yourself!');
+        }
+
         $basic->delete();
 
         return redirect()->route('basic.index')->with('message', 'User deleted successfully!');
