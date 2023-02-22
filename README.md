@@ -1,15 +1,16 @@
-# Laravel 9 + SB Admin 2
+# Laravel 10 + SB Admin 2
 
-SB Admin 2 for Laravel 9.
+SB Admin 2 for Laravel 10.
 
 | Laravel Version | Branch |
 |-----------------|--------|
-| 9.0             | main   |
-| 8.0             | 8.x    |
+| 10              | main   |
+| 9               | 9.x   |
+| 8               | 8.x    |
 
 ## Requirements
 
-- PHP >= 8.0.2
+- PHP >= 8.1.0
 - BCMath PHP Extension
 - Ctype PHP Extension
 - JSON PHP Extension
@@ -28,10 +29,6 @@ SB Admin 2 for Laravel 9.
 - Set your database credentials in your `.env` file
 - Run migration `php artisan migrate`
 - Make something awesome!
-
-## Laravel 8 Note
-
-Choose branch 8.x to use Laravel 8.
 
 ## Note
 
