@@ -15,8 +15,7 @@
         "laravel/framework": "^10.0",
         "laravel/legacy-factories": "^1.0",
         "laravel/tinker": "^2.0",
-        "laravel/ui": "^4.0",
-        "nwidart/laravel-modules": "^8.2"
+        "laravel/ui": "^4.0"
     },
     "require-dev": {
         "spatie/laravel-ignition": "^2.0",
