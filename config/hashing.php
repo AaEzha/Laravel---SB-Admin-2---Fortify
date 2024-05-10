@@ -49,4 +49,10 @@ return [
         'time' => 2,
     ],
 
+    /*
+    | Rehash on Login
+    | https://laravel.com/docs/11.x/upgrade#password-rehashing
+    */
+    'rehash_on_login' => true,
+
 ];
