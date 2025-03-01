@@ -1,10 +1,11 @@
-# Laravel 11 + SB Admin 2
+# Laravel 12 + SB Admin 2
 
-SB Admin 2 for Laravel 11.
+SB Admin 2 for Laravel 12.
 
 | Laravel Version | Branch |
 | --------------- | ------ |
-| 11              | main   |
+| 12              | main   |
+| 11              | 11.x   |
 | 10              | 10.x   |
 | 9               | 9.x    |
 | 8               | 8.x    |
